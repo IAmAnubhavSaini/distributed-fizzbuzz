@@ -1,0 +1,48 @@
+header h1 {
+  font-size: 64px;
+  text-shadow: 3px 3px 3px black;
+  padding: 2vh 2vw;
+}
+
+.FizzBuzz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh 2vw;
+  justify-content: space-evenly;
+}
+
+.item {
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* This makes it look very boring, and table-ish
+  min-width: 150px;
+   */
+}
+
+.item:nth-child(3n) .value {
+  color: green;
+}
+
+.item:nth-child(5n) .value {
+  color: red;
+}
+
+.item:nth-child(15n) .value {
+  color: yellow;
+}
+
+.index {
+  font-size: 8px;
+}
+.value {
+  font-size: 32px;
+}
+
+
+footer {
+  height: 10vw;
+  min-height: 200px;
+}
