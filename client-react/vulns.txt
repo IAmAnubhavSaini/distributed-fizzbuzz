@@ -1,0 +1,45 @@
+# Vulnerabilities
+
+```shell
+docker scan f0c1s/fizzbuzz-client-react
+
+Testing f0c1s/fizzbuzz-client-react...
+
+✗ Low severity vulnerability found in curl/libcurl
+  Description: CVE-2022-32221
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-CURL-3063711
+  Introduced through: curl/libcurl@7.83.1-r3, curl/curl@7.83.1-r3
+  From: curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3 > curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3
+  Fixed in: 7.83.1-r4
+
+✗ Low severity vulnerability found in curl/libcurl
+  Description: CVE-2022-42915
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-CURL-3063712
+  Introduced through: curl/libcurl@7.83.1-r3, curl/curl@7.83.1-r3
+  From: curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3 > curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3
+  Fixed in: 7.83.1-r4
+
+✗ Low severity vulnerability found in curl/libcurl
+  Description: CVE-2022-42916
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE316-CURL-3063713
+  Introduced through: curl/libcurl@7.83.1-r3, curl/curl@7.83.1-r3
+  From: curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3 > curl/libcurl@7.83.1-r3
+  From: curl/curl@7.83.1-r3
+  Fixed in: 7.83.1-r4
+
+
+
+Package manager:   apk
+Project name:      docker-image|f0c1s/fizzbuzz-client-react
+Docker image:      f0c1s/fizzbuzz-client-react
+Platform:          linux/arm64
+
+Tested 43 dependencies for known vulnerabilities, found 3 vulnerabilities.
+
+For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp
+```
