@@ -1,0 +1,100 @@
+# Vulnerabilities
+
+## 2022.10.30
+
+```shell
+docker scan f0c1s/fizzbuzz-server-golang
+
+Testing f0c1s/fizzbuzz-server-golang...
+
+✗ Low severity vulnerability found in busybox/busybox
+  Description: ALPINE-13661
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-BUSYBOX-2606932
+  Introduced through: busybox/busybox@1.34.1-r3, alpine-baselayout/alpine-baselayout@3.2.0-r18, ca-certificates/ca-certificates@20191127-r7, busybox/ssl_client@1.34.1-r3
+  From: busybox/busybox@1.34.1-r3
+  From: alpine-baselayout/alpine-baselayout@3.2.0-r18 > busybox/busybox@1.34.1-r3
+  From: ca-certificates/ca-certificates@20191127-r7 > busybox/busybox@1.34.1-r3
+  and 1 more...
+  Fixed in: 1.34.1-r5
+
+✗ Medium severity vulnerability found in openssl/libcrypto1.1
+  Description: Inadequate Encryption Strength
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-OPENSSL-2941810
+  Introduced through: openssl/libcrypto1.1@1.1.1l-r7, openssl/libssl1.1@1.1.1l-r7, apk-tools/apk-tools@2.12.7-r3, libretls/libretls@3.3.4-r2, ca-certificates/ca-certificates@20191127-r7
+  From: openssl/libcrypto1.1@1.1.1l-r7
+  From: openssl/libssl1.1@1.1.1l-r7 > openssl/libcrypto1.1@1.1.1l-r7
+  From: apk-tools/apk-tools@2.12.7-r3 > openssl/libcrypto1.1@1.1.1l-r7
+  and 5 more...
+  Fixed in: 1.1.1q-r0
+
+✗ High severity vulnerability found in zlib/zlib
+  Description: Out-of-bounds Write
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-ZLIB-2434420
+  Introduced through: zlib/zlib@1.2.11-r3, apk-tools/apk-tools@2.12.7-r3
+  From: zlib/zlib@1.2.11-r3
+  From: apk-tools/apk-tools@2.12.7-r3 > zlib/zlib@1.2.11-r3
+  Fixed in: 1.2.12-r0
+
+✗ High severity vulnerability found in openssl/libcrypto1.1
+  Description: Loop with Unreachable Exit Condition ('Infinite Loop')
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-OPENSSL-2426331
+  Introduced through: openssl/libcrypto1.1@1.1.1l-r7, openssl/libssl1.1@1.1.1l-r7, apk-tools/apk-tools@2.12.7-r3, libretls/libretls@3.3.4-r2, ca-certificates/ca-certificates@20191127-r7
+  From: openssl/libcrypto1.1@1.1.1l-r7
+  From: openssl/libssl1.1@1.1.1l-r7 > openssl/libcrypto1.1@1.1.1l-r7
+  From: apk-tools/apk-tools@2.12.7-r3 > openssl/libcrypto1.1@1.1.1l-r7
+  and 5 more...
+  Fixed in: 1.1.1n-r0
+
+✗ High severity vulnerability found in libretls/libretls
+  Description: Loop with Unreachable Exit Condition ('Infinite Loop')
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-LIBRETLS-2428776
+  Introduced through: libretls/libretls@3.3.4-r2, busybox/ssl_client@1.34.1-r3
+  From: libretls/libretls@3.3.4-r2
+  From: busybox/ssl_client@1.34.1-r3 > libretls/libretls@3.3.4-r2
+  Fixed in: 3.3.4-r3
+
+✗ High severity vulnerability found in busybox/busybox
+  Description: CVE-2022-28391
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-BUSYBOX-2440607
+  Introduced through: busybox/busybox@1.34.1-r3, alpine-baselayout/alpine-baselayout@3.2.0-r18, ca-certificates/ca-certificates@20191127-r7, busybox/ssl_client@1.34.1-r3
+  From: busybox/busybox@1.34.1-r3
+  From: alpine-baselayout/alpine-baselayout@3.2.0-r18 > busybox/busybox@1.34.1-r3
+  From: ca-certificates/ca-certificates@20191127-r7 > busybox/busybox@1.34.1-r3
+  and 1 more...
+  Fixed in: 1.34.1-r5
+
+✗ Critical severity vulnerability found in zlib/zlib
+  Description: Out-of-bounds Write
+  Info: https://security.snyk.io/vuln/SNYK-ALPINE315-ZLIB-2976173
+  Introduced through: zlib/zlib@1.2.11-r3, apk-tools/apk-tools@2.12.7-r3
+  From: zlib/zlib@1.2.11-r3
+  From: apk-tools/apk-tools@2.12.7-r3 > zlib/zlib@1.2.11-r3
+  Fixed in: 1.2.12-r2
+
+
+
+Package manager:   apk
+Project name:      docker-image|f0c1s/fizzbuzz-server-golang
+Docker image:      f0c1s/fizzbuzz-server-golang
+Platform:          linux/arm64
+
+Tested 15 dependencies for known vulnerabilities, found 7 vulnerabilities.
+
+For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp
+
+-------------------------------------------------------
+
+Testing f0c1s/fizzbuzz-server-golang...
+
+Package manager:   gomodules
+Target file:       /usr/src/app/fizzbuzz-server-golang
+Project name:      main
+Docker image:      f0c1s/fizzbuzz-server-golang
+
+✔ Tested 24 dependencies for known vulnerabilities, no vulnerable paths found.
+
+For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp
+
+
+Tested 2 projects, 1 contained vulnerable paths.
+```

@@ -2,6 +2,20 @@
 
 ## Run
 
+### via docker
+
+```shell
+
+## delete container on exit
+docker run --rm --name "fizzbuzz-server-golang" -p 16001:16001 -d f0c1s/fizzbuzz-server-golang
+
+## persist container on exit
+docker run --name "fizzbuzz-server-golang" -p 16001:16001 -d f0c1s/fizzbuzz-server-golang
+
+```
+
+### via source code
+
 ```
 go run server.go
 

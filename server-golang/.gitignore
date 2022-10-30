@@ -24,3 +24,7 @@
 # ...even if they are in subdirectories
 !*/
 
+# don't ignore Dockerfile, vulns.txt and CHANGELOG
+!CHANGELOG.md
+!Dockerfile
+!vulns.txt
