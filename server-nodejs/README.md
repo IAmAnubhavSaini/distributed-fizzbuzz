@@ -2,6 +2,20 @@
 
 ## Run
 
+### via docker
+
+```shell
+
+## delete container after exiting
+docker run --rm --name "fizzbuzz-server-nodejs" -p 16000:16000 -d f0c1s/fizzbuzz-server-nodejs
+
+## persist docker container
+docker run --name "fizzbuzz-server-nodejs" -p 16000:16000 -d f0c1s/fizzbuzz-server-nodejs
+
+```
+
+### via source code
+
 ```
 
 npm run start
