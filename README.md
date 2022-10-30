@@ -27,3 +27,11 @@ cd server-golang && go run server.go &
 cd ..
 cd client-react && yarn && yarn start &
 ```
+
+## Build your docker images
+
+```shell
+docker build . -t f0c1s/fizzbuzz-server-nodejs
+docker build . -t f0c1s/fizzbuzz-server-golang
+docker build . -t f0c1s/fizzbuzz-client-react
+```
