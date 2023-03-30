@@ -1,4 +1,4 @@
-# FizzBuzz
+# Distributed FizzBuzz
 
 A bit distributed.
 
